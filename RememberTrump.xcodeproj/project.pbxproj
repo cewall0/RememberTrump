@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BF8ED5F2B274C2700CD7444 /* RememberTrumpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8ED5E2B274C2700CD7444 /* RememberTrumpApp.swift */; };
-		0BF8ED612B274C2700CD7444 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8ED602B274C2700CD7444 /* ContentView.swift */; };
+		0BF8ED612B274C2700CD7444 /* TrumpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8ED602B274C2700CD7444 /* TrumpView.swift */; };
 		0BF8ED632B274C2D00CD7444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF8ED622B274C2D00CD7444 /* Assets.xcassets */; };
 		0BF8ED662B274C2D00CD7444 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF8ED652B274C2D00CD7444 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		0BF8ED5B2B274C2700CD7444 /* RememberTrump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RememberTrump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF8ED5E2B274C2700CD7444 /* RememberTrumpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberTrumpApp.swift; sourceTree = "<group>"; };
-		0BF8ED602B274C2700CD7444 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0BF8ED602B274C2700CD7444 /* TrumpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrumpView.swift; sourceTree = "<group>"; };
 		0BF8ED622B274C2D00CD7444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BF8ED652B274C2D00CD7444 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				0BF8ED5E2B274C2700CD7444 /* RememberTrumpApp.swift */,
-				0BF8ED602B274C2700CD7444 /* ContentView.swift */,
+				0BF8ED602B274C2700CD7444 /* TrumpView.swift */,
 				0BF8ED622B274C2D00CD7444 /* Assets.xcassets */,
 				0BF8ED642B274C2D00CD7444 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BF8ED612B274C2700CD7444 /* ContentView.swift in Sources */,
+				0BF8ED612B274C2700CD7444 /* TrumpView.swift in Sources */,
 				0BF8ED5F2B274C2700CD7444 /* RememberTrumpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
