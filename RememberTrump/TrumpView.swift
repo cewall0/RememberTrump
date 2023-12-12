@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TrumpView: View {
     // added Git
+    // added another line to see how git handles
     // I may want to disable the idleTimer when the app starts up and turn it back on when the app closes.
     // I can use: [UIApplication sharedApplication].idleTimerDisabled = YES;
     // We may also want to disable autolock. Maybe have a logon screen where I describe that the user may want to disable the Auto-lock feature of their phone by going to "Settings" -> "Display & Brightness" -> "Auto-Lock" -> "Never"
