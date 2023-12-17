@@ -17,7 +17,7 @@
 		0BD6FE802B281B7500A3B1D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0BF8ED5B2B274C2700CD7444 /* RememberTrump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RememberTrump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF8ED5E2B274C2700CD7444 /* RememberTrumpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberTrumpApp.swift; sourceTree = "<group>"; };
-		0BF8ED602B274C2700CD7444 /* TrumpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrumpView.swift; sourceTree = "<group>"; };
+		0BF8ED602B274C2700CD7444 /* TrumpView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = TrumpView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		0BF8ED622B274C2D00CD7444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BF8ED652B274C2D00CD7444 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */

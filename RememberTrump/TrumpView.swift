@@ -21,12 +21,19 @@ struct TrumpView: View {
     // Variables here
     //*********************
     
+    //**** The images for the trump suits ****
+
     let spade = "suit.spade.fill"
     let diamond = "suit.diamond.fill"
     let club = "suit.club.fill"
     let heart = "suit.heart.fill"
+    
+    //**** The color for the trump suit for the trump suits ****
+    
     @State var suit = "suit.club.fill"
     @State var suitColorType = "black"
+    
+    // suitColor changes the color of the suit depending on if we need red or black.
     var suitColor: Color {
         switch suitColorType {
         case "black":
@@ -38,6 +45,17 @@ struct TrumpView: View {
         }
     }
 
+    // **** Two state variables to control the team scores ****
+    @State var usScore = 0
+    @State var themScore = 0
+    
+    // **** State variables to add to score *****
+    @State var usPlusOne = false
+    @State var usPlusTwo = false
+    @State var usPlusFour = false
+    @State var themPlusOne = false
+    @State var themPlusTwo = false
+    @State var themPlusFour = false
     
     //*********************
     // End variables
@@ -51,6 +69,172 @@ struct TrumpView: View {
             
             VStack(){
                 
+                HStack{// for top button(s)
+                
+                    Image("Euchre!")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        
+                    Spacer()
+                    
+                    Button("RESET GAME") {
+                        usScore = 0
+                        themScore = 0
+                    }
+                    .foregroundColor(.white)
+                    .font(.headline)
+                    .padding(8.0)
+                    .background(.blue)
+                    .cornerRadius(10) /// make the background rounded
+                    .overlay( /// apply a rounded border
+                        RoundedRectangle(cornerRadius: 10)
+                            .inset(by: 1)
+                            .stroke(.white, lineWidth: 1)
+                    )
+                    .padding()
+                    //.aspectRatio(contentMode: .fit)
+                } // end Hstack for top buttons
+                //.padding([.bottom, .trailing], 14.0)
+                
+                
+                HStack{
+                    Spacer()
+                    VStack{ // for Us Score
+                        
+                        Text("US")
+                            .font(.largeTitle)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black)
+                        Text(String(usScore))
+                            .font(.largeTitle)
+                            .foregroundColor(.black)
+                            .padding(.bottom, -1.0)
+                        
+                        HStack{
+
+                            Button("+1") {
+                                usScore += 1
+                            }
+                            .padding(11.0)
+                            .background(.blue)
+                            .cornerRadius(10) /// make the background rounded
+                            .overlay( /// apply a rounded border
+                                RoundedRectangle(cornerRadius: 10)
+                                    .inset(by: 1)
+                                    .stroke(.white, lineWidth: 1)
+                            )
+                            
+                            
+                            Button("+2") {
+                                usScore += 2
+                            }
+                            .padding(11.0)
+                            .background(.blue)
+                            .cornerRadius(10) /// make the background rounded
+                            .overlay( /// apply a rounded border
+                                RoundedRectangle(cornerRadius: 10)
+                                    .inset(by: 1)
+                                    .stroke(.white, lineWidth: 1)
+                            )
+
+                            Button("+4") {
+                                usScore += 4
+                            }
+                            .padding(11.0)
+                            .background(.blue)
+                            .cornerRadius(10) /// make the background rounded
+                            .overlay( /// apply a rounded border
+                                RoundedRectangle(cornerRadius: 10)
+                                    .inset(by: 1)
+                                    .stroke(.white, lineWidth: 1)
+                            )
+    
+                        }
+                        .font(.title2)
+
+                    } // end VStack for us score
+                    .padding(11.0)
+                    .background(Color.gray)
+                    .cornerRadius(10) /// make the background rounded
+                    .overlay( /// apply a rounded border
+                        RoundedRectangle(cornerRadius: 10)
+                            .inset(by: 1)
+                            .stroke(.white, lineWidth: 1)
+                    )
+                    
+                    
+                    
+                    Spacer()
+                    
+                    
+                    VStack{ // for them score
+
+                        Text("THEM")
+                            .font(.largeTitle)
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.black)
+                        Text(String(themScore))
+                            .font(.largeTitle)
+                            .foregroundColor(Color.black)
+                            .padding(.bottom, -1.0)
+                        
+                        HStack{
+
+                            Button("+1") {
+                                themScore += 1
+                            }
+                            .padding(11.0)
+                            .background(.blue)
+                            .cornerRadius(10) /// make the background rounded
+                            .overlay( /// apply a rounded border
+                                RoundedRectangle(cornerRadius: 10)
+                                    .inset(by: 1)
+                                    .stroke(.white, lineWidth: 1)
+                            )
+                            
+                            Button("+2") {
+                                themScore += 2
+                            }
+                            .padding(11.0)
+                            .background(.blue)
+                            .cornerRadius(10) /// make the background rounded
+                            .overlay( /// apply a rounded border
+                                RoundedRectangle(cornerRadius: 10)
+                                    .inset(by: 1)
+                                    .stroke(.white, lineWidth: 1)
+                            )
+
+                            Button("+4") {
+                                themScore += 4
+                            }
+                            .padding(11.0)
+                            .background(.blue)
+                            .cornerRadius(10) /// make the background rounded
+                            .overlay( /// apply a rounded border
+                                RoundedRectangle(cornerRadius: 10)
+                                    .inset(by: 1)
+                                    .stroke(.white, lineWidth: 1)
+                            )
+    
+                        }
+                        .font(.title2)
+                    } // end VStack for them score
+                    .padding(11.0)
+                    .background(.gray)
+                    .cornerRadius(10) /// make the background rounded
+                    .overlay( /// apply a rounded border
+                        RoundedRectangle(cornerRadius: 10)
+                            .inset(by: 1)
+                            .stroke(.white, lineWidth: 1)
+                    )
+                    
+                    Spacer()
+                    
+                } // end HStack for scoring
+                .foregroundColor(.white)
+                .padding(.bottom, 10.0)
+            
+                
                 Spacer()
                 
                 Image(systemName: suit)
@@ -59,8 +243,10 @@ struct TrumpView: View {
                     .foregroundColor(suitColor)
                     .padding(.horizontal, 40.0)
 
-
-
+                Spacer()
+                              
+                Image("TRUMP")
+                
                 Spacer()
                 
                 HStack{
