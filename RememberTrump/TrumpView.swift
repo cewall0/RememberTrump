@@ -70,35 +70,58 @@ struct TrumpView: View {
             VStack(){
                 
                 HStack{// for top button(s)
-                
-                    Image("Euchre!")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        
+                    
                     Spacer()
                     
-                    Button("RESET GAME") {
+                    Image("Euchre!")
+                        .frame(width: 260)
+                    //                        .resizable()
+                    //                        .scaledToFit()
+                    //                        .aspectRatio(contentMode: .fit)
+                    
+                    Spacer()
+                    
+                    Button() {
+                        
+                        // reset scores to zero
                         usScore = 0
                         themScore = 0
+                        
+                    } label: {
+                        Image(systemName: "arrowshape.turn.up.left.2")
+                            .foregroundColor(Color(red: 1.0, green: 0.471, blue: 0.255))
+                            .font(.largeTitle)
                     }
-                    .foregroundColor(.white)
-                    .font(.headline)
-                    .padding(8.0)
-                    .background(.blue)
-                    .cornerRadius(10) /// make the background rounded
-                    .overlay( /// apply a rounded border
-                        RoundedRectangle(cornerRadius: 10)
-                            .inset(by: 1)
-                            .stroke(.white, lineWidth: 1)
-                    )
-                    .padding()
-                    //.aspectRatio(contentMode: .fit)
-                } // end Hstack for top buttons
-                //.padding([.bottom, .trailing], 14.0)
-                
-                
-                HStack{
                     Spacer()
+                    
+                    // ************
+                    //                    This code would make a blue button, but I didn't like it that well. The spacing was wonky.
+                    // ************
+                    
+                    
+                    //                    Button("RESET GAME") {
+                    //                        usScore = 0
+                    //                        themScore = 0
+                    //                    }
+                    //                    .foregroundColor(.white)
+                    //                    .font(.headline)
+                    //                    .frame(width: 110)
+                    //                    .padding(8.0)
+                    //                    .background(.blue)
+                    //                    .cornerRadius(10) /// make the background rounded
+                    //                    .overlay( /// apply a rounded border
+                    //                        RoundedRectangle(cornerRadius: 10)
+                    //                            .inset(by: 1)
+                    //                            .stroke(.white, lineWidth: 1)
+                    //                    )
+                    
+                }  // end Hstack for top buttons
+
+                
+                HStack{ // for Scoring boxes
+                    
+                    Spacer()
+                    
                     VStack{ // for Us Score
                         
                         Text("US")
@@ -115,7 +138,7 @@ struct TrumpView: View {
                             Button("+1") {
                                 usScore += 1
                             }
-                            .padding(11.0)
+                            .padding(6.0)
                             .background(.blue)
                             .cornerRadius(10) /// make the background rounded
                             .overlay( /// apply a rounded border
@@ -128,7 +151,7 @@ struct TrumpView: View {
                             Button("+2") {
                                 usScore += 2
                             }
-                            .padding(11.0)
+                            .padding(6.0)
                             .background(.blue)
                             .cornerRadius(10) /// make the background rounded
                             .overlay( /// apply a rounded border
@@ -140,8 +163,8 @@ struct TrumpView: View {
                             Button("+4") {
                                 usScore += 4
                             }
-                            .padding(11.0)
-                            .background(.blue)
+                            .padding(6.0)
+                            .background(Color.blue)
                             .cornerRadius(10) /// make the background rounded
                             .overlay( /// apply a rounded border
                                 RoundedRectangle(cornerRadius: 10)
@@ -150,11 +173,11 @@ struct TrumpView: View {
                             )
     
                         }
-                        .font(.title2)
+                        .font(.headline)
 
                     } // end VStack for us score
-                    .padding(11.0)
-                    .background(Color.gray)
+                    .padding(6.0)
+                    .background(Color(red: 0.522, green: 0.635, blue: 0.714))
                     .cornerRadius(10) /// make the background rounded
                     .overlay( /// apply a rounded border
                         RoundedRectangle(cornerRadius: 10)
@@ -183,7 +206,7 @@ struct TrumpView: View {
                             Button("+1") {
                                 themScore += 1
                             }
-                            .padding(11.0)
+                            .padding(6.0)
                             .background(.blue)
                             .cornerRadius(10) /// make the background rounded
                             .overlay( /// apply a rounded border
@@ -195,7 +218,7 @@ struct TrumpView: View {
                             Button("+2") {
                                 themScore += 2
                             }
-                            .padding(11.0)
+                            .padding(6.0)
                             .background(.blue)
                             .cornerRadius(10) /// make the background rounded
                             .overlay( /// apply a rounded border
@@ -207,7 +230,7 @@ struct TrumpView: View {
                             Button("+4") {
                                 themScore += 4
                             }
-                            .padding(11.0)
+                            .padding(6.0)
                             .background(.blue)
                             .cornerRadius(10) /// make the background rounded
                             .overlay( /// apply a rounded border
@@ -217,10 +240,10 @@ struct TrumpView: View {
                             )
     
                         }
-                        .font(.title2)
+                        .font(.headline)
                     } // end VStack for them score
-                    .padding(11.0)
-                    .background(.gray)
+                    .padding(6.0)
+                    .background(Color(red: 0.522, green: 0.635, blue: 0.714))
                     .cornerRadius(10) /// make the background rounded
                     .overlay( /// apply a rounded border
                         RoundedRectangle(cornerRadius: 10)
