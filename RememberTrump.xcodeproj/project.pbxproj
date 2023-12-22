@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B3188F72B35ED3600E1A5A6 /* EuchreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3188F62B35ED3600E1A5A6 /* EuchreViewModel.swift */; };
 		0BF8ED5F2B274C2700CD7444 /* RememberTrumpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8ED5E2B274C2700CD7444 /* RememberTrumpApp.swift */; };
-		0BF8ED612B274C2700CD7444 /* TrumpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8ED602B274C2700CD7444 /* TrumpView.swift */; };
+		0BF8ED612B274C2700CD7444 /* EuchreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8ED602B274C2700CD7444 /* EuchreView.swift */; };
 		0BF8ED632B274C2D00CD7444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF8ED622B274C2D00CD7444 /* Assets.xcassets */; };
 		0BF8ED662B274C2D00CD7444 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF8ED652B274C2D00CD7444 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B3188F62B35ED3600E1A5A6 /* EuchreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuchreViewModel.swift; sourceTree = "<group>"; };
 		0BD6FE802B281B7500A3B1D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0BF8ED5B2B274C2700CD7444 /* RememberTrump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RememberTrump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF8ED5E2B274C2700CD7444 /* RememberTrumpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberTrumpApp.swift; sourceTree = "<group>"; };
-		0BF8ED602B274C2700CD7444 /* TrumpView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = TrumpView.swift; sourceTree = "<group>"; tabWidth = 4; };
+		0BF8ED602B274C2700CD7444 /* EuchreView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = EuchreView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		0BF8ED622B274C2D00CD7444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BF8ED652B274C2D00CD7444 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,6 +35,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B3188F82B35ED4500E1A5A6 /* EuchreView */ = {
+			isa = PBXGroup;
+			children = (
+				0BF8ED602B274C2700CD7444 /* EuchreView.swift */,
+				0B3188F62B35ED3600E1A5A6 /* EuchreViewModel.swift */,
+			);
+			path = EuchreView;
+			sourceTree = "<group>";
+		};
+		0B3188F92B35EDCC00E1A5A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B3188F82B35ED4500E1A5A6 /* EuchreView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0BF8ED522B274C2700CD7444 = {
 			isa = PBXGroup;
 			children = (
@@ -54,7 +73,7 @@
 			children = (
 				0BD6FE802B281B7500A3B1D8 /* Info.plist */,
 				0BF8ED5E2B274C2700CD7444 /* RememberTrumpApp.swift */,
-				0BF8ED602B274C2700CD7444 /* TrumpView.swift */,
+				0B3188F92B35EDCC00E1A5A6 /* Views */,
 				0BF8ED622B274C2D00CD7444 /* Assets.xcassets */,
 				0BF8ED642B274C2D00CD7444 /* Preview Content */,
 			);
@@ -139,7 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BF8ED612B274C2700CD7444 /* TrumpView.swift in Sources */,
+				0BF8ED612B274C2700CD7444 /* EuchreView.swift in Sources */,
+				0B3188F72B35ED3600E1A5A6 /* EuchreViewModel.swift in Sources */,
 				0BF8ED5F2B274C2700CD7444 /* RememberTrumpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,13 +293,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RememberTrump/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Trump?";
+				INFOPLIST_KEY_CFBundleDisplayName = "Euchre Helper";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.card-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Remember Trump Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,13 +325,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RememberTrump/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Trump?";
+				INFOPLIST_KEY_CFBundleDisplayName = "Euchre Helper";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.card-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Remember Trump Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

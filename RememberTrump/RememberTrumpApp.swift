@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct RememberTrumpApp: App {
+struct EuchreViewApp: App {
     var body: some Scene {
         WindowGroup {
-            TrumpView()
+            EuchreView()
         }
     }
 }
