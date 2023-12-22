@@ -96,7 +96,7 @@ struct EuchreView: View {
                                 
 
                         }
-                        .foregroundColor(minusButtonsOn ? Color("AccentColor").opacity(0.6) : Color("AccentColor gray"))
+                        .foregroundColor(minusButtonsOn ? Color("AccentColor red").opacity(0.6) : Color("AccentColor gray"))
                         .buttonStyle(ScaleButtonStyle())
                         
                         Spacer()
@@ -226,7 +226,7 @@ struct EuchreView: View {
                                         
                                     } label: {
                                         Image(systemName: "1.circle")
-                                            .foregroundColor(Color("AccentColor").opacity(0.8))
+                                            .foregroundColor(Color("AccentColor red").opacity(0.8))
                                             .font(.title)
                                     }
                                     
@@ -243,7 +243,7 @@ struct EuchreView: View {
                                         }
                                     } label: {
                                         Image(systemName: "2.circle")
-                                            .foregroundColor(Color("AccentColor").opacity(0.8))
+                                            .foregroundColor(Color("AccentColor red").opacity(0.8))
                                             .font(.title)
                                     }
                                     
@@ -260,7 +260,7 @@ struct EuchreView: View {
                                         }
                                     } label: {
                                         Image(systemName: "4.circle")
-                                            .foregroundColor(Color("AccentColor").opacity(0.8))
+                                            .foregroundColor(Color("AccentColor red").opacity(0.8))
                                             .font(.title)
                                     }
                                     
@@ -357,7 +357,7 @@ struct EuchreView: View {
                                         }
                                     } label: {
                                         Image(systemName: "1.circle")
-                                            .foregroundColor(Color("AccentColor").opacity(0.8))
+                                            .foregroundColor(Color("AccentColor red").opacity(0.8))
                                             .font(.title)
                                     }
                                     
@@ -374,7 +374,7 @@ struct EuchreView: View {
                                         }
                                     } label: {
                                         Image(systemName: "2.circle")
-                                            .foregroundColor(Color("AccentColor").opacity(0.8))
+                                            .foregroundColor(Color("AccentColor red").opacity(0.8))
                                             .font(.title)
                                     }
                                     
@@ -391,7 +391,7 @@ struct EuchreView: View {
                                         }
                                     } label: {
                                         Image(systemName: "4.circle")
-                                            .foregroundColor(Color("AccentColor").opacity(0.8))
+                                            .foregroundColor(Color("AccentColor red").opacity(0.8))
                                             .font(.title)
                                     }
                                     
